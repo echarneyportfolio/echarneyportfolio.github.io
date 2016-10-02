@@ -10,6 +10,9 @@ var show_projects = function() {
         $('#projects').fadeIn(300)
     });
     $('#projects-btn').addClass('disabled')
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 2000);
 };
 var show_posts = function() {
     $('#projects-btn').removeClass('disabled');
@@ -17,4 +20,7 @@ var show_posts = function() {
         $('#posts').fadeIn(300)
     });
     $('#posts-btn').addClass('disabled')
+    $('html, body').animate({
+        scrollTop: $("#posts").offset().top
+    }, 2000);
 };
