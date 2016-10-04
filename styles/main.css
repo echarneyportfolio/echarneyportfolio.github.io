@@ -267,3 +267,12 @@ img{
 .my-headline {
   margin-top: 0px;
 }
+
+.highlighter-rouge {
+  color: #cc3333;
+  background-color: #ddd;
+}
+
+.language-bash {
+  color: #444444;
+}
