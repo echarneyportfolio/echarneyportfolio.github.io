@@ -1,10 +1,14 @@
 - name: JSTOR
   link: "http://www.jstor.org"
-  description: "I work here as a Django developer"
+  description: "I work here as a Django developer."
+
+- name: Normal Idea
+  link: "http://normalidea.com"
+  description: "Some normal ideas. Powered by the Twitter API."
 
 - name: The Drinking Gourd
   link: "http://drinkinggourd.herokuapp.com/"
-  description: "A Python RSS reader behind a fancy ui for a Buddhist Podcast"
+  description: "A Python RSS reader behind a fancy ui for a Buddhist Podcast."
 
 - name: The Brent Haas Experience
   link: "http://www.brenthaas.com"
