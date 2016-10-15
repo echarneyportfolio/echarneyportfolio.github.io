@@ -45,7 +45,7 @@ a domain that you want to have for the server
 **SSH into your server:** `ssh root@yourdomain.com` or if you didn't
  setup a domain, it'll be `ssh root@<your ip>`
 
- *If you didn't setup SSH keys you'll need to login with your root
+ *If you didn't setup SSH keys you'll be prompted to login with your root
 server password, don't worry you'll be able to set them up in just a
  moment*
 
@@ -72,7 +72,7 @@ dokku apps:create django-tutorial
 ```
 where you can replace `django-tutorial` with you app name
 
-* Yes,that's it. Dokku is Awesome. Being a developer is almost
+* Yes, that's it. Dokku is Awesome. Being a developer is almost
  easy.
 
 ## Step 4) Setup Postgres
