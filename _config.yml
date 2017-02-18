@@ -1,12 +1,12 @@
-title: "Elliot Charney"
-description: "A blog about web development, Django, Python, cats, and Zen."
-about: "Python, cats, and Zen."
-location: "Ann Arbor, Michigan"
-email: elliot.charney@gmail.com
+title: "dire"
+description: "the world isn't always a fun place."
+about: "buddhism and art"
+location: "right here"
+email: hello@dire.io
 baseurl: ""
-url: "http://elliotcharney.com"
-twitter_username: GETelliot
-github_username:  shonin
+url: "http://dire.io"
+twitter_username: normalidea
+# github_username:  shonin
 
 # google analytics tracking code, please change the value
 g_analytics: ""
@@ -19,7 +19,7 @@ projects_btn: "Projects"
 posts_btn: "Posts"
 imprint_btn: "About"
 name_badge: "a post by"
-rss_badge: "Subscribe feed!"
+# rss_badge: "Subscribe feed!"
 
 # build settings
 markdown: kramdown
