@@ -1,14 +1,14 @@
 title: "elliot charney"
 description: ""
-about: "full stack software engineer<br>data scientist in training"
+about: "full stack software engineer"
 location: "san francisco"
-email: "elliotcharney@gmail.com"
+email: "elliot.charney@protonmail.com"
 baseurl: ""
 url: ""
 twitter_username:
 github_username:  shonin
 show_about_link:
-linkedin_url: https://www.linkedin.com/in/elliot-charney-525650b9/
+linkedin_url: https://www.linkedin.com/in/elliotcharney/
 
 # google analytics tracking code, please change the value
 g_analytics: ""
