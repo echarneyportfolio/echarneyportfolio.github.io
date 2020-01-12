@@ -129,8 +129,8 @@ a{
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     color: black;
-    text-transform: uppercase;
-    letter-spacing: 10px;
+    /* text-transform: uppercase; */
+    letter-spacing: 14px;
 }
 .my-name:hover{
     color: black;
@@ -153,12 +153,12 @@ a{
 .my-mini-heading-sub{
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
-    color: #4db6ac;
+    color: #645394;
 }
 .my-description{
     font-family: 'Share Tech Mono', monospace;
     font-size: 15;
-    color: #4db6ac;
+    color: #645394;
     margin-top: 25px;
 }
 .my-footer{
@@ -179,7 +179,7 @@ a{
     padding-right: 8px;
 }
 .my-imprint-link:hover{
-    color: #38c1c1;
+    color: #645394;
 }
 .my-text-body{
     font-family: 'Libre Baskerville', serif;
@@ -230,13 +230,13 @@ a{
 }
 
 .my-twitter-link:hover{
-    color: #1da0f2;
+    color: #645394;
 }
 .my-github-link:hover{
-    color: #e19e2f;
+    color: #645394;
 }
 .my-mail-link:hover{
-    color: #ea8462;
+    color: #645394;
 }
 .my-item{
      font-family: 'Libre Baskerville', serif;
@@ -250,7 +250,7 @@ a{
 .my-tag{
     font-family: 'Share Tech Mono', monospace;
     font-size: 13px;
-    color: #4db6ac;
+    color: #645394;
 }
 #projects, #posts{
     display: none;
@@ -275,4 +275,8 @@ img{
 
 .language-bash {
   color: #444444;
+}
+
+img.self {
+  border-radius: 50%;
 }
