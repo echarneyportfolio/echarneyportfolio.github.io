@@ -259,8 +259,29 @@ img.self {
   font-weight: bold !important;
 }
 
+#about {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.skill-card {
+  margin: 20px 10px;
+  width: 200px;
+}
+
+.skill-card h3 {
+  font-size: 15px;
+}
+
+.skill-card i {
+  font-size: 50px;
+}
 
 circle-overlay {
 	font-size: 16px;

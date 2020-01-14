@@ -73,31 +73,52 @@ layout: default
 </div>
 
 <div id="about" class="row">
-  <div class="col s12 m10 offset-m1 l8 offset-l2">
+  <div class="col s12">
 
     <h2 class="my-mini-heading">About Me</h2>
-    <ul>
-      {% for project in site.data.projects %}
-      <li>
-        <p class="my-item txtl">
-          <span class="project-title">{{ project.name }}</span>
-          <br/>
-
-          {% if project.link %}
-          <a href="{{ project.link }}" target="_blank" class="my-link txtb">app</a>
-          {% endif %}
-
-          {% if project.link and project.source %} | {% endif %}
-
-          {% if project.source %}
-          <a href="{{ project.source }}" target="_blank" clss="my-link">source code</a>
-          {% endif %}
-          <br/>
-          {{ project.description }}
+    <div class="flex-container">
+      <div class="skill-card">
+        <i class="fa fa-commenting-o"></i>
+        <h3>Communication</h3>
+        <p>
+          Being able to communicate complex technical topics isn't enough.
+          I believe in open and honest communication in order to maintain productive
+          and fulfilling work relationships.
         </p>
-      </li>
-      {% endfor %}
-    </ul>
+      </div>
+      <div class="skill-card">
+        <i class="fa fa-users"></i>
+        <h3>Collaboration</h3>
+        <p>When I'm on the team, the team comes first. I don't buy into the myth that
+        developers work better alone. Programming is complicated, and we have a lot to learn from each other.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa fa-heart-o"></i>
+        <h3>Empathy</h3>
+        <p>
+          We don't build software for robots. We build it for humans.
+          I approach my work from a "humans first" perspective.
+        </p>
+      </div>
+      <div class="skill-card">
+        <i class="fa fa-compass"></i>
+        <h3>Agile</h3>
+        <p>It can be difficult to know which direction to head in when needs are always changing. I take an agile approach to my work so that the project always stays on track.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa fa-road"></i>
+        <h3>Experienced</h3>
+        <p>This isn't my first rodeo. I've been building websites since I could
+          tie my shoes, and have been building full stack web applications for the last
+          five years.</p>
+      </div>
+      <!-- <div class="skill-card">
+        <i class="fa fa-cogs"></i>
+        <h3>Process</h3>
+        <p>We don't build software for robots. We build it for humans.</p>
+      </div> -->
+    </div>
     <div>
       <a onclick="hide_lists();" class="waves-effect waves-teal btn-flat btn-large">{{ site.close_btn }}</a>
     </div>
