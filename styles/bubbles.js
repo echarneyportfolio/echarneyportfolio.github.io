@@ -1,10 +1,18 @@
 let svg = d3.select('svg');
-let width = document.body.clientWidth / 1.5; // get width in pixels
-// let width = 700;
+let width = Math.min(document.body.clientWidth, 700); // get width in pixels
+let mobile = false;
+
+// reduce number of circles on mobile screen due to slow computation
+if ('matchMedia' in window && window.matchMedia('(max-device-width: 767px)').matches) {
+  mobile = true;
+}
+
+svg.attr('height', width);
+
 let height = +svg.attr('height');
 let centerX = width * 0.5;
 let centerY = height * 0.5;
-let strength = 0.08;
+let strength = 0.05;
 let focusedNode;
 
 let format = d3.format(',d');
@@ -40,7 +48,7 @@ for (i in data_two) {
 }
 
 // reduce number of circles on mobile screen due to slow computation
-if ('matchMedia' in window && window.matchMedia('(max-device-width: 767px)').matches) {
+if (mobile) {
   data = data.filter(el => {
     return el.value >= 50;
   });
@@ -124,16 +132,22 @@ node
 node.append('title')
   .text(d => (d.cat + '::' + d.name + '\n' + format(d.value)));
 
+
+let overlayReduction = mobile ? 0.4 : 0.8;
+
 let infoBox = node.append('foreignObject')
   .classed('circle-overlay hidden', true)
-  .attr('x', -350 * 0.5 * 0.8)
-  .attr('y', -350 * 0.5 * 0.8)
-  .attr('height', 350 * 0.8)
-  .attr('width', 350 * 0.8)
+  .attr('x', -350 * 0.5 * overlayReduction)
+  .attr('y', -350 * 0.5 * overlayReduction)
+  .attr('height', 350 * overlayReduction)
+  .attr('width', 350 * overlayReduction)
     .append('xhtml:div')
     .classed('circle-overlay__inner', true);
 
-infoBox.append('h2')
+
+let titleElm = mobile ? 'h4' : 'h2';
+
+infoBox.append(titleElm)
   .classed('circle-overlay__title', true)
   .text(d => d.name);
 
@@ -156,9 +170,6 @@ node.on('click', (currentNode) => {
 
   simulation.alphaTarget(0.2).restart();
   // hide all circle-overlay
-
-  console.log("clicked");
-
   d3.selectAll('.circle-overlay').classed('hidden', true);
   d3.selectAll('.node-icon').classed('node-icon--faded', false);
 
@@ -186,7 +197,7 @@ node.on('click', (currentNode) => {
 
       let ix = d3.interpolateNumber(currentNode.x, centerX);
       let iy = d3.interpolateNumber(currentNode.y, centerY);
-      let ir = d3.interpolateNumber(currentNode.r, centerY * 0.3);
+      let ir = d3.interpolateNumber(currentNode.r, centerY * 0.4);
       return function (t) {
         // console.log('i', ix(t), iy(t));
         currentNode.fx = ix(t);
