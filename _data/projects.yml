@@ -1,7 +1,7 @@
 - name: Lojong Training
   link: "https://dire.io"
   source: "https://github.com/shonin/lojong"
-  description: "Lojong is a Tibetan Buddhist practice of memorizing a series of 52 \"slogans.\" This Vue.js app is designed to help someone memorize those slogans as well as study the meanings of them. All changes made in the app persist to local storage."
+  description: "Lojong is a Tibetan Buddhist practice of memorizing a series of 52 \"slogans.\" This simple Vue.js app is designed to help someone memorize those slogans as well as study the meanings of them. All changes made in the app persist to local storage."
 - name: Leetcode Answers
   source: "https://github.com/shonin/leetcode"
   description: "Take a look at some of my Leetcode answers! I've included comments and commentary in the source code to explain how and why I got to the solutions."
@@ -9,15 +9,19 @@
   link: "https://branchingstreams.sfzc.org/oryoki.html"
   source: "https://github.com/shonin/SFZCOryokiVideos"
   description: "This app, written for San Francisco Zen Center (SFZC), was my response when requested to build a \"DVD Menu\" for an instructional video series. Utilizing a basic configuration file, this Vue.js app can run online by pulling videos from JWPlayer, or via a flash drive then pulling the videos in from the local machine. Being able to run off of a flash drive was an essential feature so that the videos could be watched in SFZC's remote mountain monastery."
-- name: All Over Zen
-  link: "https://alloverzen.com"
-  description: "This is a WordPress installation that runs an automated clothing company for me. Any item that is purchased gets printed on demand and shipped with no human intervention on my part."
 - name: San Francisco Zen Center
   link: "https://www.sfzc.org"
   description: "This Drupal site is home to more than 200 pages and is visited by tens of thousands of people a month. I became SFZC's project manager for this website about 6 months into a full platform redesign. The 501(c)(3) decided to switch from using a proprietary CMS to Drupal, and I helped to make sure that the project launched with no major issues, meeting all the essential requirements, and that all the necessary content was transferred over."
 - name: LCD Buybacks
   link: "https://www.lcdbuybacks.com"
   description: "Built primarily using Flask, but featuring React, webpack, Bootstrap and more, this is what is often referred to as a \"reverse commerce\" application. Instead of coming here to buy things, you sell them. The user facing portion is fairly straight-forward: you register for an account and then choose which LCD screens you want to sell to the business, once you do that a shipping label is automatically generated. The admin end (details of which are protected by an NDA) is a complex but easy to use portal for managing the entire business."
+- name: JSTOR Platform Redesign
+  link: "https://www.jstor.org"
+  source: "https://www.npmjs.com/package/@ithaka/bonsai"
+  description: JSTOR is a digital library used by more than 8,000 institutions in over 160 countries. I worked on a front end development team to redesign the entire platform. We built an NPM package that reskinned Zurb's Foundation. In the process I became a contributor to Foundation, fixing bugs in their code that were acting as roadblocks for our project.
+- name: All Over Zen
+  link: "https://alloverzen.com"
+  description: "This is a WordPress installation that runs an automated clothing company for me. Any item that is purchased gets printed on demand and shipped with no human intervention on my part."
 - name: Django + S3 Multi-File Uploader
   source: "https://github.com/shonin/django-multi-files"
   description: "I built this app a while back as a demonstration on how to upload multiple files to S3 at once utilizing boto3."
