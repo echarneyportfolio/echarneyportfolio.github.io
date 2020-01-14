@@ -219,9 +219,12 @@ a{
     color: #645394;
     font-weight: bold;
 }
-#projects, #posts{
+
+#projects, #posts, #about {
     display: none;
+    opacity: 0;
 }
+
 img{
     max-width: 100%;
 }

@@ -1,32 +1,74 @@
-var hide_lists = function(cb) {
-    $('#posts').fadeOut(300);
-    $('#projects').fadeOut(300);
-    $('#posts-btn').removeClass('disabled');
-    $('#projects-btn').removeClass('disabled')
-};
-var scroll = function(id) {
-  var position = $(window).scrollTop();
-  var height = $(window).height();
-  console.log(position, height);
-  if(position < 60 && height < 650) {
-    $('html, body').animate({
-        scrollTop: $(id).offset().top
-    }, 2000);
-  }
+let t = d3.transition().duration(2000);
+
+let fadeOut = function(selector) {
+    d3.select(selector)
+      .transition()
+      .duration(500)
+      .style("opacity", 0)
+      .transition()
+      .style("display", "none");
 }
+
+let fadeIn = function(selector) {
+    d3.select(selector)
+      .transition()
+      .style("display", "block")
+      .transition()
+      .duration(500)
+      .style("opacity", 1)
+}
+
+let removeDisabled = function(selector) {
+    d3.select(selector).classed('disabled', false);
+}
+
+let addDisabled = function(selector) {
+  d3.select(selector).classed('disabled', true);
+}
+
+var hide_lists = function() {
+    fadeOut('#about');
+    fadeOut('#posts');
+    fadeOut('#projects');
+
+    removeDisabled('#projects-btn');
+    removeDisabled('#about-btn');
+    removeDisabled('#posts-btn');
+};
+
+
 var show_posts = function() {
-    $('#projects-btn').removeClass('disabled');
-    $('#projects').fadeOut(function() {
-        $('#posts').fadeIn(300)
-    });
-    $('#posts-btn').addClass('disabled');
-    scroll('#posts');
+    removeDisabled('#projects-btn');
+    removeDisabled('#about-btn');
+
+    fadeOut('#projects');
+    fadeOut('#about');
+
+    fadeIn('#posts')
+
+    addDisabled('#posts-btn')
 };
 
 var show_projects = function() {
-    $('#posts-btn').removeClass('disabled');
-    $('#posts').fadeOut(300, function() {
-        $('#projects').fadeIn(300)
-    });
-    $('#projects-btn').addClass('disabled')
+    removeDisabled('#posts-btn');
+    removeDisabled('#about-btn');
+
+    fadeOut('#posts');
+    fadeOut('#about');
+
+    fadeIn('#projects')
+
+    addDisabled('#projects-btn')
+};
+
+var show_about = function() {
+    removeDisabled('#posts-btn');
+    removeDisabled('#projects-btn');
+
+    fadeOut('#posts');
+    fadeOut('#projects');
+
+    fadeIn('#about')
+
+    addDisabled('#about-btn')
 };

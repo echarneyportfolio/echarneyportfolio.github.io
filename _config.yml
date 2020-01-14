@@ -5,7 +5,7 @@ location: "san francisco"
 email: "elliot.charney@protonmail.com"
 baseurl: ""
 url: ""
-twitter_username:
+stackoverflow: "users/story/7015979"
 github_username:  shonin
 show_about_link:
 linkedin_url: https://www.linkedin.com/in/elliotcharney/
@@ -18,7 +18,7 @@ isolang: en
 close_btn: "Close"
 home_btn: "Home"
 projects_btn: "Projects"
-posts_btn: "About Me"
+posts_btn: "Tech Skills"
 imprint_btn: "About"
 name_badge: "a post by"
 # rss_badge: "Subscribe feed!"

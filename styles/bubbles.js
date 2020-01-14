@@ -15,6 +15,10 @@ let centerY = height * 0.5;
 let strength = 0.05;
 let focusedNode;
 
+let overlayReduction = mobile ? 0.4 : 0.8;
+let titleElm = mobile ? 'h4' : 'h2';
+
+
 let format = d3.format(',d');
 
 let scaleColor = d3.scaleOrdinal(d3.schemeCategory20);
@@ -133,7 +137,6 @@ node.append('title')
   .text(d => (d.cat + '::' + d.name + '\n' + format(d.value)));
 
 
-let overlayReduction = mobile ? 0.4 : 0.8;
 
 let infoBox = node.append('foreignObject')
   .classed('circle-overlay hidden', true)
@@ -145,7 +148,6 @@ let infoBox = node.append('foreignObject')
     .classed('circle-overlay__inner', true);
 
 
-let titleElm = mobile ? 'h4' : 'h2';
 
 infoBox.append(titleElm)
   .classed('circle-overlay__title', true)
