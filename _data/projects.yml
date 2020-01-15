@@ -18,7 +18,7 @@
 - name: JSTOR Platform Redesign
   link: "https://www.jstor.org"
   source: "https://www.npmjs.com/package/@ithaka/bonsai"
-  description: JSTOR is a digital library used by more than 8,000 institutions in over 160 countries. I worked on a front end development team to redesign the entire platform. We built an NPM package that reskinned Zurb's Foundation. In the process I became a contributor to Foundation, fixing bugs in their code that were acting as roadblocks for our project.
+  description: JSTOR is a digital library used by more than 8,000 institutions in over 160 countries. I worked on a front end development team to redesign the entire platform. We built an NPM package that reskinned Zurb's Foundation. In the process I became a contributor to Foundation, fixing bugs in their code that were acting as roadblocks for our project. <a href="https://github.com/foundation/foundation-sites/pull/10445">Here's an example.</a>
 - name: All Over Zen
   link: "https://alloverzen.com"
   description: "This is a WordPress installation that runs an automated clothing company for me. Any item that is purchased gets printed on demand and shipped with no human intervention on my part."
